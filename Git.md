@@ -27,7 +27,7 @@
 	
 	git add *
 * 4.如果发生意外：
-	* fatal: remote origin already exists
+	* 错误1 fatal: remote origin already exists
 		先git remote rm origin
 	
 

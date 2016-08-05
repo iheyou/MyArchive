@@ -26,6 +26,9 @@
 	如果是所有文件都要添加
 	
 	git add *
+* 4.如果发生意外：
+	* fatal: remote origin already exists
+		先git remote rm origin
 	
 
 ##提交修改

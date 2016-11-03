@@ -21,7 +21,7 @@
 	<code>git init</code>
 * 3.将文件提交到仓库
 
-	<code>git add xx文件名xx</code>
+	<code>git add "文件名"</code>
 	
 	如果是所有文件都要添加
 	
@@ -33,9 +33,14 @@
 
 ##提交修改
 * <code>git status</code> 查看仓库当前状态，修改情况
-* <code>git diff xx文件名xx</code> 查看对文件做了什么修改
-* <code>git add xx文件名xx</code> 提交修改文件
+* <code>git diff "文件名"</code> 查看对文件做了什么修改
+* <code>git add "文件名"</code> 提交修改文件
 * <code>git commit -m“修改描述”</code> 将修改问价提交到仓库
+
+##删除文件
+* <code>git rm "文件名"</code>
+* 如果删除错了，但版本库仍然还存在
+	<code>git checkout -- "文件名"</code>
 
 ###配置连接Github远程库
 * <p>创建SSH key。在用户目录下，看看有没有.ssh目录，如果有，再看看这个目录下有没有id_rsa和id_rsa.pub这两个文件，如果已经有了，可直接跳到下一步。如果没有，打开Shell（Windows下打开Git Bash），创建SSH Key，输入命令:</p>
@@ -47,7 +52,7 @@
 ##添加到远程库
 * 首先github已经配置好，并且在github上添加了同名仓库（不同名也可以，下一步自动建立联系）
 * 与远程仓库关联
-<code>git remote add origin git@github.com:XXGithub账户名XX/文件名.git</code>
+<code>git remote add origin git@github.com:"Github账户名"/文件名.git</code>
 * 关联后，使用命令 
 <code>git push -u origin master</code>
  第一次推送master分支的所有内容；
@@ -56,7 +61,7 @@
 ##从远程库克隆
 * 首先要将要克隆的库fork到自己的账号下
 * 克隆一个本地库:
-	<code>git clone git@github.com:iheyou/XX远程库的名字XX</code>
+	<code>git clone git@github.com:iheyou/"远程库的名字"</code>
 * cd 远程库的名字  进入克隆下来的本地库
 * ls -al 可以看到本地的克隆库里面适合远程库里面一样的
 * 多人开发就从远程仓库每人克隆一份就OK

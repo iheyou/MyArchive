@@ -28,7 +28,9 @@
 	<code>git add *</code>
 * 4.如果发生意外：
 	* 错误1 fatal: remote origin already exists
-	先<code>git remote rm origin</code>
+	先
+	
+	<code>git remote rm origin</code>
 	
 
 ##提交修改
@@ -52,18 +54,41 @@
 ##添加到远程库
 * 首先github已经配置好，并且在github上添加了同名仓库（不同名也可以，下一步自动建立联系）
 * 与远程仓库关联
-<code>git remote add origin git@github.com:"Github账户名"/文件名.git</code>
+
+	<code>git remote add origin git@github.com:"Github账户名"/文件名.git</code>
+
 * 关联后，使用命令 
-<code>git push -u origin master</code>
+
+	<code>git push -u origin master</code>
+
  第一次推送master分支的所有内容；
 * 此后，每次本地提交后，只要有必要，就可以使用git push origin master 推送最新修改
 
 ##从远程库克隆
 * 首先要将要克隆的库fork到自己的账号下
 * 克隆一个本地库:
+
 	<code>git clone git@github.com:iheyou/"远程库的名字"</code>
+	
 * cd 远程库的名字  进入克隆下来的本地库
 * ls -al 可以看到本地的克隆库里面适合远程库里面一样的
 * 多人开发就从远程仓库每人克隆一份就OK
+
+
+##删除本地仓库
+* 找到本地目录下的.git仓库
+
+	<code>ls -a</code>
+	
+* 删除.git
+
+	<code>rm -rf .git</code>
+	
+* 删除本地仓库目录
+
+	<code>rm -rf "本地仓库名字"</code>
+	
+	至此就把本地仓库完全删除了
+	
 
 

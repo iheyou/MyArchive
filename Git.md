@@ -1,3 +1,4 @@
+
 #Git的使用命令
 ##Git的安装（两种方式）
 * 1.如果使用mac电脑，直接从AppStore安装Xcode，Xcode集成了Git，默认情况下并没有安装，需要运行命令：
@@ -37,7 +38,7 @@
 * <code>git status</code> 查看仓库当前状态，修改情况
 * <code>git diff "文件名"</code> 查看对文件做了什么修改
 * <code>git add "文件名"</code> 提交修改文件
-* <code>git commit -m“修改描述”</code> 将修改问价提交到仓库
+* <code>git commit -m“修改描述”</code> 将修改提交到仓库
 
 ##删除文件
 * <code>git rm "文件名"</code>
@@ -71,7 +72,7 @@
 	<code>git clone git@github.com:iheyou/"远程库的名字"</code>
 	
 * cd 远程库的名字  进入克隆下来的本地库
-* ls -al 可以看到本地的克隆库里面适合远程库里面一样的
+* ls -al 可以看到本地的克隆库里面是和远程库里面一样的
 * 多人开发就从远程仓库每人克隆一份就OK
 
 
